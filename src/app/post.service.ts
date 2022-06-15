@@ -43,4 +43,10 @@ export class PostsService {
         })
       );
   }
+
+  deletePosts() {
+    return this.http.delete(
+      "https://http-example-735bb-default-rtdb.firebaseio.com/posts.json"
+    );
+  }
 }
