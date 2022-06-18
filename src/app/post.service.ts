@@ -48,6 +48,7 @@ export class PostsService {
             "Custom-Header": "Hello",
           }),
           params: new HttpParams().set("print", "pretty"),
+          responseType: "json",
         }
       )
       .pipe(
@@ -75,6 +76,7 @@ export class PostsService {
         "https://http-example-735bb-default-rtdb.firebaseio.com/posts.json",
         {
           observe: "events",
+          responseType: "json",
         }
       )
       .pipe(
